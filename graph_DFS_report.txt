@@ -1,0 +1,28 @@
+DFS of adjacency list (outcoming) graph
+number of vertexes: 8
+Adjacency list (outcoming)
+1:   5  6  7  5
+2:   5  7  4  5  6  4
+3:   3  8  1
+4:   3  4  4  7  7  5  4
+5:   4  8  7  1
+6:   1  6
+7: 
+8:   7  8
+start vertex for DFS: 2
+stack: 2 5 7 4 6
+ print 6
+stack: 2 5 7 4 3
+ print 3
+stack: 2 5 7 4
+ print 4
+stack: 2 5 7
+ print 7
+stack: 2 5 8 1
+ print 1
+stack: 2 5 8
+ print 8
+stack: 2 5
+ print 5
+stack: 2
+ print 2
