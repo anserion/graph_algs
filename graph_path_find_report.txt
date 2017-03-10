@@ -1,0 +1,52 @@
+DFS of adjacency list (outcoming) graph
+number of vertexes: 7
+Adjacency list (outcoming)
+1:   5  6  6
+2:   7  4  6  3
+3:   5  3  4  3
+4:   1  7  2  3  4  6
+5:   4  4  4  3  7
+6:   1  3  1  5  1
+7:   6  7
+start vertex: 1
+target vertex: 2
+stack: 1
+go to vertex 5
+stack: 1 5
+go to vertex 4
+stack: 1 5 4
+skip vertex 1
+go to vertex 7
+stack: 1 5 4 7
+go to vertex 6
+stack: 1 5 4 7 6
+skip vertex 1
+go to vertex 3
+stack: 1 5 4 7 6 3
+skip vertex 5
+skip vertex 3
+skip vertex 4
+skip vertex 3
+return to vertex 3
+stack: 1 5 4 7 6
+skip vertex 5
+skip vertex 3
+skip vertex 4
+skip vertex 3
+return to vertex 6
+stack: 1 5 4 7
+skip vertex 1
+skip vertex 3
+skip vertex 1
+skip vertex 5
+skip vertex 1
+return to vertex 7
+stack: 1 5 4
+skip vertex 6
+skip vertex 7
+return to vertex 4
+stack: 1 5
+skip vertex 1
+skip vertex 7
+go to vertex 2
+path found: 2<-4<-5<-1
